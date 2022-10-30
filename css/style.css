@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo{
+  width: 100%;
+  height: auto;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_item a:hover, a:focus{
+  
+}
+
+.pricing{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 700px){
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  
+  #logo{
+    width: 400px;
+    height: auto;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 300px;
+  }
+  
+}
+
+@media (prefers-reduced-motion){
+
+  #logo{
+    animation: none;
+  }
+
+}
